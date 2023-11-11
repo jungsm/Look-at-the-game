@@ -2,11 +2,28 @@
   <div class="content-container">
     <div class="content" v-for="i in 12" :key="i">
       <div class="content-img"></div>
-      <p>장르</p>
+   <p>{{MmorpgData[0].title}}</p>
       <p>플랫폼</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name : 'Content',
+  props : {
+    FpsData : Array ,
+    MmorpgData : Array,
+    AosData : Array,
+    RacingData : Array ,
+    RhythmData : Array,
+    ShootingData : Array,
+
+
+  }
+}
+</script>
+
 
 <style>
 .content-container {
