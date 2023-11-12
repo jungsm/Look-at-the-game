@@ -12,20 +12,25 @@
   height: 100px;
   border-bottom: 1px solid rgb(189, 189, 189);
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the content horizontally */
   align-items: center;
+  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
+.Navbar-Brand {
+  width: 100%;
+}
+
 .Navbar-name {
   font-size: 24px;
+  /* Remove margin-left to keep the text centered */
 }
 
 @media (min-width: 768px) {
   .Navbar {
-    justify-content: center;
     padding: 0 300px;
   }
 }

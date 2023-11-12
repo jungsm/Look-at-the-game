@@ -3,7 +3,7 @@
   <Navbar />
   <section class="main">
     <Menu/>
-    <router-view :FpsData="FpsData" :MmorpgData="MmorpgData" :AosData="AosData" :RacingData="RacingData" :RhythmData="RhythmData" :ShootingData="Shooting">
+    <router-view :FpsData="FpsData" :MmorpgData="MmorpgData" :AosData="AosData" :RacingData="RacingData" :RhythmData="RhythmData" :ShootingData="ShootingData">
       </router-view> 
   </section>
   <Footer />
@@ -12,7 +12,6 @@
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Menu from './components/Menu.vue'
 import Footer from './components/Footer.vue'
 import Fps from './assets/Fps.js'
 import Mmorpg from './assets/Mmorpg.js'
@@ -35,7 +34,6 @@ export default {
   },
   components: {
     Navbar : Navbar,
-    Menu : Menu,
     Footer : Footer,
   }
 }

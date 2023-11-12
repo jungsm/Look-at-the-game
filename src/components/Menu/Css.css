@@ -1,3 +1,30 @@
+.container {
+  max-width: 1200px; /* 최대 너비 설정 */
+  margin: 100px auto; /* 가운데 정렬을 위한 마진 설정 */
+  border-bottom: 1px solid rgb(129, 129, 129);
+    padding-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  flex-wrap: wrap; /* 화면이 작아질 때 아이템을 다음 줄로 이동 */
+     position: relative;
+  
+}
+.menu li {
+    position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 10px; /* 아이템 간격 설정 */
+  text-align: center;
+  flex: 1; /* 아이템이 같은 너비로 자동 조절 */
+}
+
+
 .content-container {
     display: flex;
     justify-content: flex-start; /* 왼쪽으로 정렬 */
@@ -14,5 +41,9 @@
   .content-img {
     width: 100%;
     height: 200px;
-    background: black;
+
+  }
+  .content-img img{
+    width: 100%;
+    height: 100%;
   }
