@@ -13,7 +13,7 @@ export default {
 <style>
 .Footer{
     width: 100%;
-    height: 200px;
+    height: 150px;
     background: rgb(143, 143, 143);
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="menu">
     <router-link to="/mmorpg">
-      <li>MMORPG</li>
+      <li class="">MMORPG</li>
     </router-link>
     <router-link to="/aos">
       <li>AOS</li>
@@ -23,9 +23,11 @@
   </div>
   <div class="content-container">
     <div class="content" v-for="i in  MmorpgData" :key="i.id">
+      <router-link  :to="'/detail/'+ i.id">
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
-      <p>플랫폼</p>
+  </router-link>
+      <p>플랫폼: {{ MmorpgData[i.id].platform}}</p>
     </div>
   </div>
 </template>
@@ -56,8 +58,10 @@ export default {
   border-bottom: 3px solid red;
   position: absolute;
   bottom: -50%;
-  left: 0;
+  left: 0rem;
   right: 0;
 }
-
+p{
+  line-height: 2.0;
+}
 </style>

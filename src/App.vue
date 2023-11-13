@@ -3,7 +3,7 @@
   <Navbar />
   <section class="main">
     <Menu/>
-    <router-view :FpsData="FpsData" :MmorpgData="MmorpgData" :AosData="AosData" :RacingData="RacingData" :RhythmData="RhythmData" :ShootingData="ShootingData">
+    <router-view  :FpsData="FpsData" :MmorpgData="MmorpgData" :AosData="AosData" :RacingData="RacingData" :RhythmData="RhythmData" :ShootingData="ShootingData">
       </router-view> 
   </section>
   <Footer />
@@ -24,7 +24,7 @@ export default {
   name: 'App',
     data() {
     return {
-        FpsData: Fps,
+      FpsData: Fps,
       MmorpgData: Mmorpg,
       AosData: Aos,
       RacingData: Racing,

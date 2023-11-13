@@ -22,9 +22,11 @@
     </ul>
   </div>
   <div class="content-container">
-    <div class="content" v-for="i in  AosData" :key="i.id">
+    <div class="content" v-for="i in  AosData" :key="i.id" >
+      <router-link :to="'/detail5/'+ i.id">
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
+  </router-link>
       <p>플랫폼</p>
     </div>
   </div>
