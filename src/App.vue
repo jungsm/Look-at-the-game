@@ -2,7 +2,6 @@
  <div class="wrap">
   <Navbar />
   <section class="main">
-    <Menu/>
     <router-view  :FpsData="FpsData" :MmorpgData="MmorpgData" :AosData="AosData" :RacingData="RacingData" :RhythmData="RhythmData" :ShootingData="ShootingData">
       </router-view> 
   </section>
@@ -43,11 +42,11 @@ export default {
 .wrap {
   font-family: 'Noto Sans KR', sans-serif;
  width: 100%;
- height: 1080px;
 }
 .main{
  max-width: 1200px; 
  margin: 0 auto;
+ height: 1160px;
 }
 
 </style>

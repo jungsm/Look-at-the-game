@@ -15,15 +15,14 @@
         <li>출시연도</li>
         <li>게임소개</li>
       </ul>
-      <ul>
+      <ul class="text-right">
         <li>{{ MmorpgData[$route.params.id].platform}}</li>
         <li>{{ MmorpgData[$route.params.id].tag}}</li>
         <li>{{ MmorpgData[$route.params.id].producer}}</li>
         <li>{{ MmorpgData[$route.params.id].date}}</li>
-        <li>{{ MmorpgData[$route.params.id].content}}</li>
       </ul>
     </div>
-       
+    <span class="introduction">{{ MmorpgData[$route.params.id].content}}</span>
     </div>
     <div class="content-img">
       <img :src="MmorpgData[$route.params.id].image" alt="">
@@ -46,7 +45,7 @@ export default {
 .content{
   display: flex;
     width: 100%;
-    height: 600px;
+  height: 1080px;
     margin-top: 30px;
 }
 .content-textbox{
@@ -57,20 +56,23 @@ export default {
   width: 100%;
   font-size: 32px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgb(221, 220, 220);
+  border-bottom: 2px solid rgb(248, 113, 113);
   
 }
 .textbox{
-  line-height: 3.0;
+  line-height: 4.0;
   display: flex;
   font-size: 16px;
 }
 .text-left{
-  width: 25%;
+  width: 17%;
+  
 }
 .text-right{
   width: 85%;
-
+}
+.text-right{
+  font-weight: 200;
 }
 .content-img{
     padding-left:3rem;
@@ -79,5 +81,9 @@ export default {
 }
 .content-img img{
   border-radius: 6px;
+}
+.introduction{
+  font-weight: 200;
+  line-height: 2.0;
 }
 </style>

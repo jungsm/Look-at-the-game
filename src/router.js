@@ -1,4 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
+import Menu from './components//Menu.vue'
 import Aos from './components/Menu/Aos.vue'
 import Racing from './components/Menu/Racing.vue'
 import Mmorpg from './components/Menu//Mmorpg.vue'
@@ -11,9 +12,18 @@ import Detail2 from './components/Detail/Detail2.vue'
 import Detail3 from './components/Detail/Detail3.vue'
 import Detail4 from './components/Detail/Detail4.vue'
 import Detail5 from './components/Detail/Detail5.vue'
+import Home from "./components/Home.vue"
 
 
 const routes = [
+  {
+    path: "/",
+    component: Home,
+  },
+  {
+    path: "/",
+    component: Menu,
+  },
   {
     path: "/mmorpg",
     component: Mmorpg,

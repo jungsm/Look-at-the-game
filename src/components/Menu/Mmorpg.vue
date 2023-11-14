@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <ul class="menu">
-    <router-link to="/mmorpg">
+    <router-link to="/">
       <li class="">MMORPG</li>
     </router-link>
     <router-link to="/aos">
@@ -31,7 +31,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import './Css.css'
 export default {
@@ -61,7 +60,5 @@ export default {
   left: 0rem;
   right: 0;
 }
-p{
-  line-height: 2.0;
-}
+
 </style>

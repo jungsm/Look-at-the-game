@@ -16,18 +16,18 @@
       <router-link to="/shooting">
          <li>슈팅게임</li>
         </router-link>
-      <router-link to="/racing">
+      <router-link to="/">
       <li>레이싱</li>
       </router-link>
     </ul>
   </div>
   <div class="content-container">
     <div class="content" v-for="i in  RacingData" :key="i.id">
-      <router-link  :to="'/detail2/'+ i.id">
+      <router-link  :to="'/detail5/'+ i.id">
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
   </router-link>
-      <p>플랫폼</p>
+  <p>플랫폼: {{  RacingData[i.id].platform}}</p>
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
     <router-link to="/aos">
       <li>AOS</li>
       </router-link>
-      <router-link to="/fps">
+      <router-link to="/">
       <li>FPS</li>
       </router-link>
       <router-link to="/rhythm">
@@ -23,11 +23,11 @@
   </div>
   <div class="content-container">
     <div class="content" v-for="i in FpsData" :key="i.id">
-      <router-link  :to="'/detail1/'+ i.id">
+      <router-link  :to="'/detail2/'+ i.id">
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
   </router-link>
-      <p>플랫폼</p>
+  <p>플랫폼: {{ FpsData[i.id].platform}}</p>
     </div>
   </div>
 </template>

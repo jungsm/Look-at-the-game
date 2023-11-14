@@ -2,10 +2,10 @@
   <div class="container">
     <ul class="menu">
     <router-link to="/mmorpg">
-      <li class="ll">MMORPG</li>
+      <li>MMORPG</li>
     </router-link>
-    <router-link to="/aos">
-      <li class="Aos">AOS</li>
+    <router-link to="/">
+      <li>AOS</li>
       </router-link>
       <router-link to="/fps">
       <li>FPS</li>
@@ -23,11 +23,11 @@
   </div>
   <div class="content-container">
     <div class="content" v-for="i in  AosData" :key="i.id" >
-      <router-link :to="'/detail5/'+ i.id">
+      <router-link :to="'/detail1/'+ i.id">
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
   </router-link>
-      <p>플랫폼</p>
+  <p>플랫폼: {{ AosData[i.id].platform}}</p>
     </div>
   </div>
 </template>
@@ -60,6 +60,9 @@ export default {
   bottom: -50%;
   left: 14rem;
   right: 0;
+}
+.main{
+  height: 1080px;
 }
 
 </style>

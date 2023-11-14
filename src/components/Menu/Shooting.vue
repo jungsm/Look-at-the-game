@@ -13,7 +13,7 @@
       <router-link to="/rhythm">
       <li>리듬게임</li>
       </router-link>
-      <router-link to="/shooting">
+      <router-link to="/">
          <li>슈팅게임</li>
         </router-link>
       <router-link to="/racing">
@@ -27,7 +27,7 @@
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
   </router-link>
-      <p>플랫폼</p>
+  <p>플랫폼: {{ ShootingData[i.id].platform}}</p>
     </div>
   </div>
 </template>

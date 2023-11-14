@@ -10,7 +10,7 @@
       <router-link to="/fps">
       <li>FPS</li>
       </router-link>
-      <router-link to="/rhythm">
+      <router-link to="/">
       <li>리듬게임</li>
       </router-link>
       <router-link to="/shooting">
@@ -27,7 +27,7 @@
       <div class="content-img"> <img :src="i.image" alt=""></div>
    <p>{{i.title}}</p>
   </router-link>
-      <p>플랫폼</p>
+   <p>플랫폼: {{ RhythmData[i.id].platform}}</p>
     </div>
   </div>
 </template>
