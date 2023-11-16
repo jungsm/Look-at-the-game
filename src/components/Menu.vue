@@ -21,7 +21,6 @@
       </router-link>
     </ul>
   </div>
-  <input v-model="searchQuery" @input="performSearch" type="text" placeholder="검색어를 입력하세요">
 </template>
 
 <script>
